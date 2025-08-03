@@ -1,494 +1,159 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="/prosolutionmarket./">
-    <title>Pro Solution Market SPA - Soluciones Avanzadas de Inspección y Vigilancia con Drones</title>
-    <meta name="description" content="Pro Solution Market SPA ofrece servicios especializados de inspección preventiva y vigilancia con drones para infraestructuras energéticas. Tecnología de vanguardia desde 2018.">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pro Solution Market SpA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+    }
+
+    header {
+      background-image: url('images/header-drone.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #0d47a1;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .services, .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      font-size: 1.1em;
+    }
+
+    footer {
+      background-color: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer a {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <h2>Pro Solution Market <span>SPA</span></h2>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
-                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
-                    <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
-                </ul>
-                <a href="#contacto" class="cta-button">Solicitar Cotización</a>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="inicio" class="hero">
-        <div class="hero-background">
-            <img src="assets/images/drone_industrial_inspection.jpg" alt="Drones de inspección industrial" class="hero-image">
-            <div class="hero-overlay"></div>
-        </div>
-        <div class="hero-content">
-            <h1 class="hero-title">Soluciones Avanzadas de Inspección y Vigilancia con Drones</h1>
-            <p class="hero-subtitle">Tecnología de vanguardia para la protección y optimización de infraestructuras energéticas</p>
-            <div class="hero-buttons">
-                <a href="#servicios" class="btn btn-primary">Conocer Servicios</a>
-                <a href="#contacto" class="btn btn-secondary">Contactar Ahora</a>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>
+  <header>
+    <h1>Pro Solution Market SpA</h1>
+    <p>Inspección técnica avanzada y vigilancia aérea con drones de última generación en todo Chile.</p>
+  </header>
 
-    <!-- About Section -->
-    <section id="nosotros" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2 class="section-title">¿Quiénes Somos?</h2>
-                    <p class="about-description">
-                        Pro Solution Market es una empresa chilena, fundada en 2018, especializada en soluciones avanzadas para la 
-                        inspección preventiva de infraestructuras energéticas y vigilancia. Ofrecemos servicios de inspección térmica 
-                        para plantas solares, líneas de alta y media tensión, y torres eólicas, con tecnología de vanguardia para 
-                        detectar fallas potenciales y optimizar la eficiencia operativa.
-                    </p>
-                    <p class="about-description">
-                        Contamos con capacidades de vigilancia aérea perimetral, tanto diurna como nocturna, empleando drones 
-                        equipados con cámaras de alta definición y sistemas de iluminación disuasivos para proteger instalaciones 
-                        estratégicas.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number">2018</span>
-                            <span class="stat-label">Año de Fundación</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">100+</span>
-                            <span class="stat-label">Proyectos Realizados</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">24/7</span>
-                            <span class="stat-label">Vigilancia Continua</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <img src="assets/images/drone_perimeter_security.jpg" alt="Vigilancia perimetral con drones">
-                </div>
-            </div>
-        </div>
-    </section>
+  <section>
+    <h2>¿Quiénes Somos?</h2>
+    <p style="text-align: center;">
+      Empresa chilena especializada en supervisión de activos críticos mediante drones con sensores térmicos, multiespectrales y cámaras HD. Inspeccionamos plantas solares, líneas eléctricas, torres eólicas y ofrecemos vigilancia perimetral 24/7 con patrullajes automatizados.
+    </p>
+  </section>
 
-    <!-- Mission Vision Section -->
-    <section class="mission-vision">
-        <div class="container">
-            <div class="mission-vision-grid">
-                <div class="mission-card">
-                    <div class="card-icon">
-                        <i class="fas fa-bullseye"></i>
-                    </div>
-                    <h3>Nuestra Misión</h3>
-                    <p>
-                        Ser líderes en soluciones avanzadas y confiables de inspección preventiva y vigilancia con drones. 
-                        Estamos comprometidos a optimizar la seguridad y la eficiencia de infraestructuras industriales a 
-                        través del uso de tecnología de vanguardia.
-                    </p>
-                </div>
-                <div class="vision-card">
-                    <div class="card-icon">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <h3>Nuestra Visión</h3>
-                    <p>
-                        Ser líderes globales en la industria de mantenimiento preventivo y vigilancia disuasiva mediante la 
-                        innovación tecnológica. Aspiramos a transformar la manera en que las empresas gestionan sus 
-                        infraestructuras.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section>
+    <h2>Servicios</h2>
+    <div class="services">
+      <div class="card">
+        <img src="images/servicio-solar.jpg" alt="Planta solar con dron" />
+        <h3>Inspección en Plantas Solares</h3>
+        <p>Identificación de puntos calientes y fallas en paneles fotovoltaicos con cámaras térmicas.</p>
+      </div>
+      <div class="card">
+        <img src="images/servicio-linea.jpg" alt="Inspección de línea eléctrica" />
+        <h3>Líneas Eléctricas AT/MT</h3>
+        <p>Detección de daños estructurales o fallas en componentes, sin interrupción del servicio.</p>
+      </div>
+      <div class="card">
+        <img src="images/servicio-vigilancia.jpg" alt="Vigilancia perimetral con drones" />
+        <h3>Vigilancia Perimetral</h3>
+        <p>Monitoreo continuo con drones de seguridad, luces tácticas y video en tiempo real.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Services Section -->
-    <section id="servicios" class="services">
-        <div class="container">
-            <h2 class="section-title">Nuestros Servicios</h2>
-            <p class="section-subtitle">Soluciones integrales con tecnología de vanguardia</p>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <img src="assets/images/drone_surveillance.png" alt="Vigilancia Perimetral" class="service-image">
-                    <h3>Vigilancia Perimetral Disuasiva</h3>
-                    <p>Drones equipados con linternas y parlantes LP12 para monitoreo en tiempo real y cobertura precisa, garantizando seguridad continua con menor riesgo para el personal.</p>
-                    <ul class="service-features">
-                        <li>Monitoreo 24/7</li>
-                        <li>Cámaras térmicas de alta precisión</li>
-                        <li>Alertas sonoras disuasivas</li>
-                        <li>Cobertura hasta 20 km</li>
-                    </ul>
-                </div>
+  <section>
+    <h2>Galería</h2>
+    <div class="gallery">
+      <img class="card" src="images/dron1.jpg" alt="Dron en operación" />
+      <img class="card" src="images/dron2.jpg" alt="Vista aérea de torre" />
+      <img class="card" src="images/dron3.jpg" alt="Operador en terreno" />
+      <img class="card" src="images/dron4.jpg" alt="Vigilancia nocturna" />
+    </div>
+  </section>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <img src="assets/images/electrical_tower.jpg" alt="Inspecciones Redes AT-MT" class="service-image">
-                    <h3>Inspecciones Redes AT-MT</h3>
-                    <p>Imágenes de alta resolución y análisis termográfico para identificar corrosión, óxido y fallos en conexiones, con informes detallados y recomendaciones.</p>
-                    <ul class="service-features">
-                        <li>Análisis termográfico avanzado</li>
-                        <li>Detección de fallas tempranas</li>
-                        <li>Informes exhaustivos</li>
-                        <li>Inspección llave en mano</li>
-                    </ul>
-                </div>
+  <section class="contact">
+    <h2>Contacto</h2>
+    <p>Email: contacto@prosolution.cl</p>
+    <p>Teléfono: +56 9 1234 5678</p>
+    <p>Ubicación: Santiago, Chile</p>
+  </section>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-solar-panel"></i>
-                    </div>
-                    <img src="assets/images/solar_plant.jpg" alt="Energía Fotovoltaica" class="service-image">
-                    <h3>Energía Fotovoltaica</h3>
-                    <p>Inspecciones técnicas preventivas con tecnología termográfica para evaluar la integridad y rendimiento de sistemas fotovoltaicos hasta 33 kV.</p>
-                    <ul class="service-features">
-                        <li>Detección de celdas defectuosas</li>
-                        <li>Identificación de puntos calientes</li>
-                        <li>Análisis de inversores</li>
-                        <li>Optimización de eficiencia</li>
-                    </ul>
-                </div>
+  <footer>
+    <p>&copy; 2025 Pro Solution Market SpA. Todos los derechos reservados.</p>
+    <p><a href="https://github.com/tuusuario" target="_blank">Ver en GitHub</a></p>
+  </footer>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-wind"></i>
-                    </div>
-                    <img src="assets/images/wind_turbine.jpg" alt="Energía Eólica" class="service-image">
-                    <h3>Energía Eólica</h3>
-                    <p>Drones de última tecnología para detectar microfisuras, erosión en palas y anomalías térmicas, optimizando la planificación de mantenimiento.</p>
-                    <ul class="service-features">
-                        <li>Detección de microfisuras</li>
-                        <li>Análisis de erosión en palas</li>
-                        <li>Anomalías térmicas</li>
-                        <li>Máxima eficiencia operativa</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-cube"></i>
-                    </div>
-                    <img src="assets/images/thermal_camera.jpg" alt="Fotogrametría" class="service-image">
-                    <h3>Fotogrametría</h3>
-                    <p>Mapeo con drones de alta precisión para crear mapas 3D y modelos digitales, permitiendo análisis exhaustivo del terreno.</p>
-                    <ul class="service-features">
-                        <li>Mapas 3D precisos</li>
-                        <li>Modelos digitales</li>
-                        <li>Análisis de terreno</li>
-                        <li>Planificación de proyectos</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-video"></i>
-                    </div>
-                    <img src="assets/images/cctv_system.jpg" alt="Sistema CCTV + RPA" class="service-image">
-                    <h3>Sistema CCTV + RPA</h3>
-                    <p>Instalación de sistemas CCTV y RPA para vigilancia continua con cobertura aérea donde las cámaras no llegan.</p>
-                    <ul class="service-features">
-                        <li>Vigilancia continua</li>
-                        <li>Cobertura aérea completa</li>
-                        <li>Monitoreo en tiempo real</li>
-                        <li>Protección integral</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section class="why-choose-us">
-        <div class="container">
-            <h2 class="section-title">¿Por Qué Elegirnos?</h2>
-            <p class="section-subtitle">Tecnología avanzada y experiencia sólida para resultados precisos</p>
-            
-            <div class="advantages-grid">
-                <div class="advantage-card">
-                    <div class="advantage-icon">
-                        <i class="fas fa-tachometer-alt"></i>
-                    </div>
-                    <h3>Eficiencia Operativa</h3>
-                    <p>Monitoreo de datos en tiempo real con capacidad de visualizar las operaciones en todo momento, generando eficiencia operativa real.</p>
-                </div>
-                
-                <div class="advantage-card">
-                    <div class="advantage-icon">
-                        <i class="fas fa-dollar-sign"></i>
-                    </div>
-                    <h3>Reducción de Costos</h3>
-                    <p>La integración de drones reduce significativamente los costos y tiempos de trabajo en comparación con el uso exclusivo de personal en tierra.</p>
-                </div>
-                
-                <div class="advantage-card">
-                    <div class="advantage-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3>Flexibilidad en Servicio</h3>
-                    <p>Desde patrullaje regulares hasta inspecciones preventivas, nos ajustamos a sus horarios y necesidades para garantizar un servicio eficiente.</p>
-                </div>
-            </div>
-
-            <!-- Comparison Table -->
-            <div class="comparison-section">
-                <h3>Comparativa: Dron vs Guardia en Tierra</h3>
-                <div class="comparison-table">
-                    <div class="table-header">
-                        <div class="table-cell">Aspecto</div>
-                        <div class="table-cell">Guardia en Tierra</div>
-                        <div class="table-cell">Dron RPA</div>
-                    </div>
-                    <div class="table-row">
-                        <div class="table-cell">Cobertura</div>
-                        <div class="table-cell">Limitada</div>
-                        <div class="table-cell highlight">Hasta 20 km por vuelo</div>
-                    </div>
-                    <div class="table-row">
-                        <div class="table-cell">Exposición a riesgo</div>
-                        <div class="table-cell">Alta</div>
-                        <div class="table-cell highlight">Cero</div>
-                    </div>
-                    <div class="table-row">
-                        <div class="table-cell">Tiempo de reacción</div>
-                        <div class="table-cell">Variable / Lento</div>
-                        <div class="table-cell highlight">Rápido y eficiente</div>
-                    </div>
-                    <div class="table-row">
-                        <div class="table-cell">Disuasión visual/auditiva</div>
-                        <div class="table-cell">Limitada</div>
-                        <div class="table-cell highlight">Alta (luces + altavoz)</div>
-                    </div>
-                    <div class="table-row">
-                        <div class="table-cell">Costo operativo</div>
-                        <div class="table-cell">Alto</div>
-                        <div class="table-cell highlight">Eficiente y Personalizado</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Additional Services Section -->
-    <section class="additional-services">
-        <div class="container">
-            <h2 class="section-title">Servicios Adicionales</h2>
-            <div class="additional-services-grid">
-                <div class="additional-service">
-                    <i class="fas fa-leaf"></i>
-                    <h4>Control de Vegetación</h4>
-                    <p>Sensores multiespectrales para control eficiente de vegetación en líneas eléctricas.</p>
-                </div>
-                <div class="additional-service">
-                    <i class="fas fa-hard-hat"></i>
-                    <h4>Seguimiento de Obras</h4>
-                    <p>Imágenes de alta resolución para monitorear progreso y asegurar calidad.</p>
-                </div>
-                <div class="additional-service">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h4>Capacitación Interna</h4>
-                    <p>Entrenamiento en uso de drones para inspecciones y vigilancia.</p>
-                </div>
-                <div class="additional-service">
-                    <i class="fas fa-video"></i>
-                    <h4>Videos Publicitarios</h4>
-                    <p>Tomas aéreas y videos profesionales para diversas aplicaciones.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="proyectos" class="projects">
-        <div class="container">
-            <h2 class="section-title">Proyectos Realizados</h2>
-            <p class="section-subtitle">Prestamos servicios a líderes en el sector energético y grandes compañías industriales</p>
-            <div class="projects-content">
-                <p class="projects-description">
-                    Trabajamos con empresas reconocidas por su exigencia en calidad y precisión, quienes confían en nuestra 
-                    experiencia con tecnología avanzada. Nuestro compromiso con la excelencia y la innovación se refleja en 
-                    cada proyecto realizado.
-                </p>
-                <div class="projects-stats">
-                    <div class="project-stat">
-                        <span class="stat-number">100+</span>
-                        <span class="stat-label">Proyectos Completados</span>
-                    </div>
-                    <div class="project-stat">
-                        <span class="stat-number">50+</span>
-                        <span class="stat-label">Clientes Satisfechos</span>
-                    </div>
-                    <div class="project-stat">
-                        <span class="stat-number">99%</span>
-                        <span class="stat-label">Tasa de Éxito</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Process Section -->
-    <section class="process">
-        <div class="container">
-            <h2 class="section-title">Proceso de Contratación</h2>
-            <div class="process-timeline">
-                <div class="process-step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Reunión Inicial</h3>
-                        <p>Realizamos una reunión para definir objetivos, requisitos y expectativas del proyecto, asegurando una comprensión clara de las necesidades.</p>
-                    </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>Planificación y Propuesta</h3>
-                        <p>Desarrollamos un plan detallado y una propuesta técnica con cronograma, costos y recursos necesarios, adaptados a los requerimientos del cliente.</p>
-                    </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>Aprobación y Coordinación</h3>
-                        <p>Formalizamos el acuerdo mediante OC o firma del contrato, coordinamos los detalles operativos para iniciar el proyecto de manera organizada y eficiente.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contacto" class="contact">
-        <div class="container">
-            <h2 class="section-title">Contacto</h2>
-            <p class="section-subtitle">¿Tienes alguna pregunta? Escríbenos</p>
-            
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>prosolutionmarket@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Teléfono</h4>
-                            <p>+56 9 38843395</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-globe"></i>
-                        <div>
-                            <h4>Sitio Web</h4>
-                            <p>wwwprosolutionmarket.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-instagram"></i>
-                        <div>
-                            <h4>Instagram</h4>
-                            <p>@prosolutionmarket</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Nombre completo" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" id="phone" name="phone" placeholder="Teléfono">
-                    </div>
-                    <div class="form-group">
-                        <select id="service" name="service" required>
-                            <option value="">Seleccionar servicio</option>
-                            <option value="vigilancia">Vigilancia Perimetral</option>
-                            <option value="inspeccion-redes">Inspección Redes AT-MT</option>
-                            <option value="energia-fotovoltaica">Energía Fotovoltaica</option>
-                            <option value="energia-eolica">Energía Eólica</option>
-                            <option value="fotogrametria">Fotogrametría</option>
-                            <option value="cctv">Sistema CCTV + RPA</option>
-                            <option value="otros">Otros servicios</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Mensaje" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Pro Solution Market SPA</h3>
-                    <p>Soluciones avanzadas de inspección y vigilancia con drones. Tecnología de vanguardia para la protección de infraestructuras energéticas.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Servicios</h4>
-                    <ul>
-                        <li><a href="#servicios">Vigilancia Perimetral</a></li>
-                        <li><a href="#servicios">Inspección Redes AT-MT</a></li>
-                        <li><a href="#servicios">Energía Fotovoltaica</a></li>
-                        <li><a href="#servicios">Energía Eólica</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contacto</h4>
-                    <ul>
-                        <li>prosolutionmarket@gmail.com</li>
-                        <li>+56 9 38843395</li>
-                        <li>@prosolutionmarket</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Pro Solution Market SPA. Todos los derechos reservados.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Back to Top Button -->
-    <button id="backToTop" class="back-to-top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-
-    <script src="script.js"></script>
 </body>
 </html>
-
